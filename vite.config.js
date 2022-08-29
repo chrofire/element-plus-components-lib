@@ -11,5 +11,25 @@ export default defineConfig({
         alias: {
             '@element-plus-components-lib': fileURLToPath(new URL('./packages', import.meta.url))
         }
+    },
+    build: {
+        lib: {
+            entry: fileURLToPath(
+                new URL('./packages/element-plus-components-lib/index.js', import.meta.url)
+            ),
+            name: 'element-plus-components-lib',
+            fileName: 'index'
+        },
+        rollupOptions: {
+            // 外部化处理不打包进库的依赖
+            external: ['vue', 'element-plus'],
+            output: {
+                exports: 'named',
+                globals: {
+                    vue: 'Vue',
+                    'element-plus': 'ElementPlus'
+                }
+            }
+        }
     }
 })
