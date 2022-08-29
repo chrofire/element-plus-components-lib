@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "@element-plus-components-lib/*": ["../packages/*"],
+            "element-plus-components-lib": ["../packages/element-plus-components-lib/index.js"],
+            "docs": ["../docs"]
+        }
+    },
+    "include": ["../**/*", "../packages/**/*"],
+    "exclude": ["node_modules", "dist"]
+}

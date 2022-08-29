@@ -32,7 +32,13 @@ export default defineConfig({
         })
     ],
     resolve: {
-        alias: {}
+        alias: {
+            '@element-plus-components-lib': fileURLToPath(new URL('../packages', import.meta.url)),
+            'element-plus-components-lib': fileURLToPath(
+                new URL('../packages/element-plus-components-lib/index.js', import.meta.url)
+            ),
+            docs: fileURLToPath(new URL('../docs', import.meta.url))
+        }
     },
     ssr: {
         noExternal: ['element-plus']
