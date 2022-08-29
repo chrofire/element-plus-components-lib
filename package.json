@@ -1,0 +1,26 @@
+{
+    "name": "element-plus-components-lib",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview --port 4173",
+        "lint": "eslint --fix **/*.{js,jsx,vue}",
+        "lint:style": "stylelint --fix **/*.{vue,css,sass,scss}"
+    },
+    "dependencies": {
+        "vue": "^3.2.37"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^3.0.1",
+        "@vitejs/plugin-vue-jsx": "^2.0.0",
+        "eslint": "^8.23.0",
+        "eslint-plugin-vue": "^9.4.0",
+        "postcss-html": "^1.5.0",
+        "sass": "^1.54.5",
+        "stylelint": "^14.11.0",
+        "stylelint-config-recommended-vue": "^1.4.0",
+        "stylelint-config-standard-scss": "^5.0.0",
+        "vite": "^3.0.4"
+    }
+}
