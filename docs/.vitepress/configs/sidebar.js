@@ -20,7 +20,8 @@ export const sidebar = [
         collapsed: false,
         items: [
             { text: 'Checkbox 多选框', link: '/Form/Checkbox/index.md' },
-            { text: 'Radio 单选框', link: '/Form/Radio/index.md' }
+            { text: 'Radio 单选框', link: '/Form/Radio/index.md' },
+            { text: 'Select 选择器', link: '/Form/Select/index.md' }
         ]
     }
 ]
