@@ -19,7 +19,8 @@ export const sidebar = [
         collapsible: true,
         collapsed: false,
         items: [
-            { text: 'Checkbox 多选框', link: '/Form/Checkbox/index.md' }
+            { text: 'Checkbox 多选框', link: '/Form/Checkbox/index.md' },
+            { text: 'Radio 单选框', link: '/Form/Radio/index.md' }
         ]
     }
 ]
