@@ -24,5 +24,13 @@ export const sidebar = [
             { text: 'Radio 单选框', link: '/Form/Radio/index.md' },
             { text: 'Select 选择器', link: '/Form/Select/index.md' }
         ]
+    },
+    {
+        text: 'Feedback 反馈组件',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: 'Dialog 对话框', link: '/Feedback/Dialog/index.md' }
+        ]
     }
 ]
