@@ -30,7 +30,8 @@ export const sidebar = [
         collapsible: true,
         collapsed: false,
         items: [
-            { text: 'Dialog 对话框', link: '/Feedback/Dialog/index.md' }
+            { text: 'Dialog 对话框', link: '/Feedback/Dialog/index.md' },
+            { text: 'Loading 加载', link: '/Feedback/Loading/index.md' }
         ]
     }
 ]
