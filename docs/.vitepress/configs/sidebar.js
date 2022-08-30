@@ -13,5 +13,13 @@ export const sidebar = [
         collapsible: true,
         collapsed: false,
         items: [{ text: 'Button 按钮', link: '/Basic/Button/index.md' }]
+    },
+    {
+        text: 'Form 表单组件',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: 'Checkbox 多选框', link: '/Form/Checkbox/index.md' }
+        ]
     }
 ]
