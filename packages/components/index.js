@@ -9,6 +9,7 @@ export * from './BaseSelect'
 
 // Data
 export * from './BasePagination'
+export * from './BaseTable'
 
 // Feedback
 export * from './BaseDialog'

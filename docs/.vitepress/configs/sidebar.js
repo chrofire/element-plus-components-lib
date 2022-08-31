@@ -30,7 +30,8 @@ export const sidebar = [
         collapsible: true,
         collapsed: false,
         items: [
-            { text: 'Pagination 分页', link: '/Data/Pagination/index.md' }
+            { text: 'Pagination 分页', link: '/Data/Pagination/index.md' },
+            { text: 'Table 表格', link: '/Data/Table/index.md' }
         ]
     },
     {
