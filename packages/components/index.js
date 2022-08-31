@@ -9,6 +9,7 @@ export * from './BaseSelect'
 
 // Data
 export * from './BaseDescriptions'
+export * from './BaseImage'
 export * from './BasePagination'
 export * from './BaseTable'
 
