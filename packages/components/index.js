@@ -8,6 +8,7 @@ export * from './BaseRadioGroup'
 export * from './BaseSelect'
 
 // Data
+export * from './BaseDescriptions'
 export * from './BasePagination'
 export * from './BaseTable'
 

@@ -30,6 +30,7 @@ export const sidebar = [
         collapsible: true,
         collapsed: false,
         items: [
+            { text: 'Descriptions 描述列表', link: '/Data/Descriptions/index.md' },
             { text: 'Pagination 分页', link: '/Data/Pagination/index.md' },
             { text: 'Table 表格', link: '/Data/Table/index.md' }
         ]
