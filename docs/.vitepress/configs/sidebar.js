@@ -26,6 +26,14 @@ export const sidebar = [
         ]
     },
     {
+        text: 'Data 数据展示',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: 'Pagination 分页', link: '/Data/Pagination/index.md' }
+        ]
+    },
+    {
         text: 'Feedback 反馈组件',
         collapsible: true,
         collapsed: false,
