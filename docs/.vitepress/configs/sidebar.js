@@ -37,6 +37,14 @@ export const sidebar = [
         ]
     },
     {
+        text: 'Navigation 导航',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: 'Tabs 标签页', link: '/Navigation/Tabs/index.md' }
+        ]
+    },
+    {
         text: 'Feedback 反馈组件',
         collapsible: true,
         collapsed: false,

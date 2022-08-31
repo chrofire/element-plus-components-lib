@@ -13,5 +13,8 @@ export * from './BaseImage'
 export * from './BasePagination'
 export * from './BaseTable'
 
+// Navigation
+export * from './BaseTabs'
+
 // Feedback
 export * from './BaseDialog'
