@@ -52,5 +52,13 @@ export const sidebar = [
             { text: 'Dialog 对话框', link: '/Feedback/Dialog/index.md' },
             { text: 'Loading 加载', link: '/Feedback/Loading/index.md' }
         ]
+    },
+    {
+        text: 'Expand 拓展组件',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: 'Renderer 渲染器', link: '/Expand/Renderer/index.md' }
+        ]
     }
 ]

@@ -18,3 +18,6 @@ export * from './BaseTabs'
 
 // Feedback
 export * from './BaseDialog'
+
+// Expand
+export * from './BaseRenderer'
