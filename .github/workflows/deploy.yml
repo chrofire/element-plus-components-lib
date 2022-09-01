@@ -1,0 +1,46 @@
+name: Deploy
+
+# 推送 main 分支 时 触发
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  # 定义一个 任务, 并命名为 deploy
+  deploy:
+    # 配置任务运行在 最新的 Ubuntu Linux 运行器
+    runs-on: ubuntu-latest
+    # 步骤
+    steps:
+      # 检出 仓库代码 到 运行器
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # 安装 pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: latest
+
+      # 安装 Node.js
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      # 安装 依赖
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      # 构建
+      - name: Build
+        run: pnpm docs:build
+
+      # 部署
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist

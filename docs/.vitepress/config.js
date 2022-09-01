@@ -5,6 +5,7 @@ export default defineConfig({
     title: 'Element Plus Components Lib',
     lang: 'zh-CN',
     lastUpdated: false,
+    base: '/element-plus-components-lib/',
     themeConfig: {
         sidebar,
         outlineTitle: '页面梗概',
