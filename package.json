@@ -10,16 +10,19 @@
         "lint": "eslint --fix **/*.{js,jsx,vue}",
         "lint:style": "stylelint --fix **/*.{vue,css,sass,scss}"
     },
+    "sideEffects": [
+        "dist/*"
+    ],
     "files": [
         "dist/*"
     ],
-    "main": "./dist/index.umd.js",
-    "module": "./dist/index.mjs",
-    "style": "./dist/style.css",
+    "main": "./dist/lib/packages/element-plus-components-lib/index.js",
+    "module": "./dist/es/packages/element-plus-components-lib/index.js",
+    "style": "./dist/es/style.css",
     "exports": {
         ".": {
-            "require": "./dist/index.umd.js",
-            "import": "./dist/index.mjs"
+            "require": "./dist/lib/packages/element-plus-components-lib/index.js",
+            "import": "./dist/es/packages/element-plus-components-lib/index.js"
         },
         "./*": "./*"
     },
