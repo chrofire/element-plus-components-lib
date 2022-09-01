@@ -1,6 +1,6 @@
 <template>
     <el-button @click="() => BaseDialogRef.setVisible(true)">打开</el-button>
-    <BaseDialog ref="BaseDialogRef" v-bind="info">
+    <BaseDialog v-bind="info" ref="BaseDialogRef">
         templateContent
     </BaseDialog>
 </template>
@@ -12,7 +12,6 @@ import { BaseDialog } from 'element-plus-components-lib'
 const BaseDialogRef = ref(null)
 
 const info = reactive({
-    ref: 'BaseDialogRef',
     title: '标题',
     confirmProps: {
         onClick: () => unref(BaseDialogRef).setVisible(false)
