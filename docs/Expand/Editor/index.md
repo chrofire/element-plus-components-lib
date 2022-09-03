@@ -28,6 +28,20 @@ import BaseEditor from '/src/components/BaseEditor/index.vue'
 
 ## 结合 BaseForm 使用
 
+> BaseForm 添加样式
+
+```vue
+<style lang="scss" scoped>
+.el-form-item.is-error {
+    .editor__wrapper {
+        border-color: var(--el-color-danger);
+    }
+}
+</style>
+```
+
+> 使用
+
 <<< docs/Expand/Editor/Demo2.vue
 
 <script setup>
