@@ -33,6 +33,9 @@
     "devDependencies": {
         "@vitejs/plugin-vue": "^3.0.1",
         "@vitejs/plugin-vue-jsx": "^2.0.0",
+        "@vueuse/core": "^9.1.1",
+        "@wangeditor/editor": "^5.1.15",
+        "@wangeditor/editor-for-vue": "^5.1.12",
         "eslint": "^8.23.0",
         "eslint-plugin-vue": "^9.4.0",
         "postcss-html": "^1.5.0",

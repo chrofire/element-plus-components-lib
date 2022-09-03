@@ -58,6 +58,7 @@ export const sidebar = [
         collapsible: true,
         collapsed: false,
         items: [
+            { text: 'Editor 编辑器', link: '/Expand/Editor/index.md' },
             { text: 'Renderer 渲染器', link: '/Expand/Renderer/index.md' }
         ]
     }

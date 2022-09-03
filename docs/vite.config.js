@@ -41,7 +41,7 @@ export default defineConfig({
         }
     },
     ssr: {
-        noExternal: ['element-plus']
+        noExternal: ['element-plus', '@wangeditor/editor', '@wangeditor/editor-for-vue']
     },
     css: {
         postcss: {
