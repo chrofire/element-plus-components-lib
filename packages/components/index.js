@@ -20,5 +20,6 @@ export * from './BaseTabs'
 export * from './BaseDialog'
 
 // Expand
+export * from './BaseContextMenu'
 export * from './BaseRenderer'
 // export * from './BaseEditor' // TODO: SSR Error
