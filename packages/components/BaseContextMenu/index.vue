@@ -19,7 +19,8 @@ export default defineComponent({
             contextMenuPosition: {
                 left: 0,
                 top: 0
-            }
+            },
+            payload: null
         })
 
         const contextMenuPositionStyle = computed(() => {
@@ -35,9 +36,10 @@ export default defineComponent({
         }
 
         // @contextmenu event
-        const open = async event => {
+        const open = async (event, payload) => {
             if (!event) throw new Error('未传入event')
             event.preventDefault()
+            state.payload = payload
 
             // 每次打开 contextmenu 前先初始化
             if (state.visible) state.visible = false
@@ -81,6 +83,7 @@ export default defineComponent({
         const close = () => {
             state.visible = false
             setDeepSelect(props.menuList)
+            state.payload = null
         }
 
         // 菜单项点击事件
@@ -260,6 +263,7 @@ export default defineComponent({
         align-items: center;
         min-height: 28px;
         user-select: none;
+        white-space: nowrap;
     }
     &.select {
         background: var(--context-menu-item-select-bg-color);
